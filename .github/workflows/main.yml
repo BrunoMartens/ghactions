@@ -3,6 +3,8 @@ on:
   push:
     branches:
     - main
+    paths-ignore:
+    - 'docs/**'
   pull_request:
     branches:
     - main
@@ -20,4 +22,7 @@ jobs:
           npm install
           npm run test:ci
           npm run build:ci
+      - name: copy code coverage report
+        run:
+          cp ./coverage/lcov-report/* ./docs/* 
         
