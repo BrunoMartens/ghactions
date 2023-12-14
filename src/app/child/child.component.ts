@@ -17,5 +17,6 @@ export class ChildComponent {
     } else {
       const f = 'false';
     }
+    return this.check;
   }
 }
