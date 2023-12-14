@@ -24,5 +24,5 @@ jobs:
           npm run build:ci
       - name: copy code coverage report
         run:
-          cp ./coverage/lcov-report ./docs 
+          cp -TRv ./coverage/lcov-report ./docs 
         
