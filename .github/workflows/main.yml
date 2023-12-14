@@ -32,5 +32,5 @@ jobs:
           git config --global user.name "Bruno Martens"
           git add ./docs/**
           git commit -m "commit code coverage"
-          git push origin master
+          git push origin main
         
