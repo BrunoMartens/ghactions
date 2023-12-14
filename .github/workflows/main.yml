@@ -28,6 +28,8 @@ jobs:
       - name: commit
         run: |
           # Stage the file, commit and push
+          git config --global user.email "brunomartens@telenet.be"
+          git config --global user.name "Bruno Martens"
           git add ./docs/**
           git commit -m "commit code coverage"
           git push origin master
